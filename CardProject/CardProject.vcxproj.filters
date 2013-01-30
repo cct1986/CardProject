@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="source">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="resource">
+      <UniqueIdentifier>{55420569-a3c6-4c83-ad34-b6ba8232d02d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource\data">
+      <UniqueIdentifier>{9e8275c1-3e99-44e8-b09f-650dbe77e462}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\source\CCard.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\CDeck.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\CSVIterator.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\CSVRow.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\main.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\source\CCard.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\CDeck.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\CSVIterator.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\CSVRow.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\debug.h">
+      <Filter>source</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\resource\data\cardData.csv">
+      <Filter>resource\data</Filter>
+    </None>
+  </ItemGroup>
+</Project>
