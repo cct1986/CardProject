@@ -13,6 +13,7 @@
   <ItemGroup>
     <ClCompile Include="..\source\CCard.cpp" />
     <ClCompile Include="..\source\CDeck.cpp" />
+    <ClCompile Include="..\source\CHand.cpp" />
     <ClCompile Include="..\source\CSVIterator.cpp" />
     <ClCompile Include="..\source\CSVRow.cpp" />
     <ClCompile Include="..\source\main.cpp" />
@@ -20,6 +21,7 @@
   <ItemGroup>
     <ClInclude Include="..\source\CCard.h" />
     <ClInclude Include="..\source\CDeck.h" />
+    <ClInclude Include="..\source\CHand.h" />
     <ClInclude Include="..\source\CSVIterator.h" />
     <ClInclude Include="..\source\CSVRow.h" />
     <ClInclude Include="..\source\debug.h" />

@@ -7,6 +7,7 @@
 #include "CSVIterator.h"
 #include "CCard.h"
 #include "CDeck.h"
+#include "CHand.h"
 
 using namespace std;
 
@@ -49,6 +50,15 @@ int main () {
 
 	CCard card_4( "insert2ndCard", NONE );
 	deck.insertCard( 2, card_4 );
+
+	deck.printDeck();
+
+	CHand hand;
+	hand.insertCard( deck.getAndRemoveTopCardFromDeck() );
+	deck.printDeck();
+
+	hand.insertCard( deck.getAndRemoveCardFromDeck( 3 ) );
+	hand.printHand();
 
 	deck.printDeck();
 

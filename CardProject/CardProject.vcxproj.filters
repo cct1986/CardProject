@@ -28,6 +28,9 @@
     <ClCompile Include="..\source\main.cpp">
       <Filter>source</Filter>
     </ClCompile>
+    <ClCompile Include="..\source\CHand.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\source\CCard.h">
@@ -43,6 +46,9 @@
       <Filter>source</Filter>
     </ClInclude>
     <ClInclude Include="..\source\debug.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\CHand.h">
       <Filter>source</Filter>
     </ClInclude>
   </ItemGroup>

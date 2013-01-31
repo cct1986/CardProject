@@ -16,7 +16,6 @@ vector<CCard> CDeck::getDeck() {
 int CDeck::getCardNum() {
 	int size = m_vDeck.size();
 	assert( size >= 0 );
-	TRACE( size );
 	return size;
 }
 
