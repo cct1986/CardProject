@@ -3,29 +3,35 @@
 
 #include <iostream>
 #include "debug.h"
+#include <assert.h>
 
 #include <sstream>
-#include <assert.h>
 #include <algorithm>
 #include <vector>
 #include "CCard.h"
 
 class CDeck {
 	std::vector<CCard> m_vDeck; // Last (bottom) card of the deck is the first element
-	
-	private:
-	public:
-		CDeck( std::vector<CCard> cardList );
-		~CDeck();
-		
-		std::vector<CCard> getDeck();
-		
-		int getCardNum();
-		void shuffleDeck();
-		CCard getAndRemoveCardFromDeck( unsigned int n );
-		CCard getAndRemoveTopCardFromDeck();
-		
-		void printDeck();
+
+private:
+public:
+	CDeck( std::vector<CCard> cardList );
+	~CDeck();
+
+	std::vector<CCard> getDeck();
+
+	int getCardNum();
+	void shuffleDeck();
+
+	bool insertCard( unsigned int pos, CCard card );
+	bool insertCardFromTop( CCard card );
+	bool insertCardFromBottom( CCard card ); 
+
+	CCard getCard( unsigned int n );
+	CCard getAndRemoveCardFromDeck( unsigned int n );
+	CCard getAndRemoveTopCardFromDeck();
+
+	void printDeck();
 };
 
 #endif

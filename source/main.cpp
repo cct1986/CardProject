@@ -38,6 +38,20 @@ int main () {
 	
 	deck.printDeck();
 
+	CCard card_1( "insertTop", NONE );
+	deck.insertCardFromTop( card_1 );
+	CCard card_2( "insertBottom", NONE );
+	deck.insertCardFromBottom( card_2 );
+	CCard card_3( "insert5thCard", NONE );
+	deck.insertCard( 5, card_3 );
+
+	deck.printDeck();
+
+	CCard card_4( "insert2ndCard", NONE );
+	deck.insertCard( 2, card_4 );
+
+	deck.printDeck();
+
 	cin.ignore(1);
 	
 	return 0;
