@@ -21,15 +21,15 @@ ECardType getECardTypeFromInt( int i );
 class CCard {
 	std::string m_strName;
 	ECardType m_eType;
-	private:
-	public:
-		CCard();
-		CCard( std::string name, ECardType type );
-		~CCard();
-		std::string getName();
-		void setName( std::string name );
-		ECardType getType();
-		void setType( ECardType type );
+private:
+public:
+	CCard();
+	CCard( std::string name, ECardType type );
+	~CCard();
+	std::string getName();
+	void setName( std::string name );
+	ECardType getType();
+	void setType( ECardType type );
 };
 
 #else

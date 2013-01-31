@@ -10,15 +10,15 @@
 
 class CSVRow
 {
-    public:
-        std::string const& operator[](size_t index) const;
-		
-        size_t size() const;
-		
-        void readNextRow(std::istream& str);
-		
-    private:
-        std::vector<std::string>    m_data;
+public:
+	std::string const& operator[](size_t index) const;
+
+	size_t size() const;
+
+	void readNextRow(std::istream& str);
+
+private:
+	std::vector<std::string>    m_data;
 };
 
 #else
